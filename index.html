@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <title>Kai Ying Chan Personal Website</title>
+        <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src = "final.js"></script>
+        <link href= "final.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!-- This is the navigation menu of my website-->
+        <header class = "KaiYingChanHeader">
+            <nav>
+                <div>
+                <p>Kai Ying Chan</p>
+                <ul>
+                    <li><a class="headerButtons" href="#">Home</a></li>
+                    <li><a class="headerButtons" href="#aboutMeSection">About me</a></li>
+                    <li><a class="headerButtons" href="#projectButton">Education & Experience</a></li>
+                    <li><a class="headerButtons" href="#contactTitle">Contact Me</a></li>
+                </ul>
+                </div>
+            </nav>
+            <!-- Content inside background image -->
+            <h2>This is my first website using Javascript & Jquery</h2>
+        </header>
+        <main class = "indexMain">
+            <!-- About me Section where I will put an image gallery made with js and jquery-->
+        <section id = "aboutMeSection">
+            <h2 id>About Me</h2>
+            <article>
+                
+                    <img src="images/aboutMePic.jpg" width=500 height=600 id="changeAboutMePic" style=" border: 3px solid grey">
+                    <br>
+                    <div id = "imageContainer">
+                        <img src = "images/aboutMePic.jpg" class = "imageStyle">
+                        <img src = "images/aboutMePic2.jpg" class = "imageStyle">
+                        <img src = "images/aboutMePic3.jpg" class = "imageStyle">
+                        <img src = "images/aboutMePic4.jpg" class = "imageStyle">
+                        <img src = "images/aboutMePic5.jpg" class = "imageStyle">
+                    </div>
+            </article>
+            <!-- Some content about myself-->
+            <article style="width : 60%">
+                <h4>Introduction:</h4>
+                    <p>
+                        My name is Kai Ying Chan but I prefer to be called Lite Jan. I was born in September 28,1993.
+                        I graduated in a college in Taiwan and I majored Electrical Engineering. I served one year
+                        in the military according to law and worked as a semiconductor engineer for one year.
+                        Now I hope to change my major to computer science and I hope that I will have gained 
+                        the skills of becoming an accomplished programmer.
+                    </p>
+                <h4>Hobbies:</h4>
+                    <p>
+                        During my spare time I like to do outdoor activities. I played basketball in
+                        elementary and middle school. I played volleyball in high school and played 
+                        softball in college. I also like to gym to keep my body healthy. In addition to outdoor
+                        activities, I also like indoor activities. I like playing computer games and
+                        singing.
+                    </p>
+                <!-- This is why I put my projects and this is a button to toggle them-->
+                <h4 id= "projectButton">Projects</h4>
+                <section id = "projectsToHide">
+                    <!-- Actual page of my website-->
+                    <div>
+                        <img src ="images/htmlCSS.png" width=215 height=138.5>
+                        <br>
+                        <a href="http://ddion.com/htmlf19pm/Kai_Chan/">First HTML website</a>
+                        <br>
+                        <a href="https://github.com/lwtech-edu/web-project-lightjan2005/blob/master/finalProjectKaiYingChan/index.html" class = sourceCodeButton>HTML</a>
+                        <a href="https://github.com/lwtech-edu/web-project-lightjan2005/blob/master/finalProjectKaiYingChan/css/final.css" class = sourceCodeButton>CSS</a>
+                    </div>
+                    <div>
+                        <img src ="images/rockPaperScissors.jpeg" width=215 height=138.5>
+                        <br>
+                        <a href="http://ddion.com/htmlf19pm/Kai_Chan/">Rock Paper Scissors</a>
+                        <br>
+                        <a href="https://github.com/lwtech-edu/web-project-lightjan2005/blob/master/Rock_Paper_Scissors_game/assignment1.html" class = sourceCodeButton>HTML</a>
+                        <a href="https://github.com/lwtech-edu/web-project-lightjan2005/blob/master/Rock_Paper_Scissors_game/rockPaperScissors.css" class = sourceCodeButton>CSS</a>
+                        <a href="https://github.com/lwtech-edu/web-project-lightjan2005/blob/master/Rock_Paper_Scissors_game/rockPaperScissors.js" class = sourceCodeButton>JS & Jquery</a>
+                    </div>
+                    <div>
+                        <img src ="images/htmlCSS.png" width=215 height=138.5>
+                        <br>
+                        <a href="http://ddion.com/htmlf19pm/Kai_Chan/">Quiz App</a>
+                        <br>
+                        <a href="https://github.com/lwtech-edu/web-project-lightjan2005/blob/master/quizGame/index.html" class = sourceCodeButton>HTML</a>
+                        <a href="https://github.com/lwtech-edu/web-project-lightjan2005/blob/master/quizGame/quizGame.css" class = sourceCodeButton>CSS</a>
+                        <a href="https://github.com/lwtech-edu/web-project-lightjan2005/blob/master/quizGame/quizGame.js" class = sourceCodeButton>JS & Jquery</a>
+                    </div>
+                </section>
+            </article>
+        </section>
+        <p id = "beginExperience"></p>
+        <!-- This is the experience section -->
+        <section id = "experienceSection">
+            <article>
+                <h3>Education</h3>
+                <p>
+                    <ul>
+                        <li>Chongming Junior High School (Sept, 2006 ~ June, 2009)</li>
+                        <li>The Affiliated Senior High School of National University of Tainan (Sept,2009 ~ June,2012)</li>
+                        <li>Fu Jen Catholic University (Sept,2012 ~ June,2016)</li>
+                        <li>Lake Washington Institute of Technology (Sept,2019 ~ )</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <h3>Club Experience</h3>
+                <p>
+                    <ul>
+                        <li>Fu Jen University Electrical Engineering Softball team (Sept,2012 ~ June,2016)</li>
+                        <li>AIESEC Cambodia Volunteer (Jan, 2015 ~ Feb,2015)</li>
+                        <li>Fu Jen University Electrical Engineering Softball team team leader (January,2016 ~ June,2016)</li>
+                        <li>Fu Jen University Softball team (Sept,2014 ~ June,2016)</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <h3>Job Experience</h3>
+                <p>
+                    <ul>
+                        <li>GO 100 English Institution English / Math Tutor (Oct, 2014 ~ Jan, 2015)</li>
+                        <li>Mandatory Military Service Republic of China Army Squad Leader (Sept, 2016 ~ Sept, 2017)</li>
+                        <li>ASE CHUNGLI (ASECL) Process Engineer (Sept, 2017 ~ Sept,2018)</li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+        <!-- Contact form of my webpage for them to contact me -->
+        <div class ="contactForm">
+            <!-- Will send email to me after submission -->
+            <h2 id ="contactTitle">Contact me</h2>
+            <form method="post" id ="submitForm" action="MAILTO:lightjan2005@gmail.com" method="post" enctype="text/plain">
+            <h3>Self Introduction</h3>
+            <div class ="aboutYourselfContainer">
+            <label for = "name">Name:</label>
+            <input type="text" name="name" id="fullName" 
+                   size="20" maxlength="50" required
+                   placeholder="Name required*">
+            <span id = nameError>*</span>
+            <br>
+            <label for = "email">Email:</label>
+            <input type="email" name="email" id="email" 
+                   size="20" maxlength="50" required
+                   placeholder="email required*">
+            <span id = emailError>*</span>
+            <br>
+            <label for = "message">Message:</label>
+                <textarea type = "text" name = "message" id = "message" cols = "40" rows = "5" required
+                placeholder="text required*" ></textarea>
+                <span id = messageError>*</span>
+            <br>
+            </div>
+            <h4 id = "submit" class = "button">Submit</h4>
+            <h4 id = "reset" class ="button">Reset</h4>
+                <!-- <input type = "submit" name = "submit" value = "Send Form" class = "button" id = "submitButton"> -->
+                <!-- <input type = "reset" name = "reset" value = "Clear Form" class = "button" id = "resetButton">  -->     
+            </form>
+        </div>     
+        </main>
+        <footer>
+            <!-- This is the footer of my website and the buttons -->
+            <h2>Follow Me</h2>
+            <div>
+                <a class="socialButton" href="https://www.facebook.com/profile.php?id=100000497922490"><i class="fab fa-facebook-f"></i></a>
+                <a class="socialButton" href="https://www.instagram.com/lightjan2005/"><i class="fab fa-instagram"></i></a>
+                <a class="socialButton" href="https://www.linkedin.com/in/jan-lite-4793b81a4/"><i class="fab fa-linkedin"></i></a>
+                <a class="socialButton" href="https://twitter.com/lightjan2005"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <p>&copy;2020 Chan Kai Ying</p>
+        </footer>
+    </body>
+</html>

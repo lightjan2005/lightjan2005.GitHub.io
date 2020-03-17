@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <!-- Call the CSS -->
+    <link href = "rockPaperScissors.css" rel = "stylesheet" type = "text/css">
+    <!-- Call the javascript code -->
+    <script src="rockPaperScissors.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+  </head>
+
+  <body>
+    <!-- Buttons for user input -->
+    <nav>
+      <div class="scoreboard">
+        <p id="user">User Wins: </p>
+      </div>
+      <div class="scoreboard">
+        <p id="computer">Computer Wins: </p> 
+      </div>
+      </div>
+      <p>Do you choose rock, paper or scissors?</p>
+      <img src="images/rock.png" class = "choiceImage" input type="button" onclick="pick(1)" value="Rock">
+      <img src="images/paper.png" class= "choiceImage" input type="button" onclick="pick(2)" value="Paper">
+      <img src="images/scissors.png" class="choiceImage" input type="button" onclick="pick(3)" value="Scissors">
+
+    
+      <!-- Show result -->
+      <p id="userResult"></p>
+      <p id="endResult"></p>
+      
+    </nav>
+  </body>
+</html>

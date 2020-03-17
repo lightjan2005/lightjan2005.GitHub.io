@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Give the body a background color */
+body{
+    background-color: #1AA8FF;
+}
+
+/* This is the container of the game */
+nav{
+    text-align: center;
+    border: 2px solid;
+    font-family: cursive;
+    height:auto;
+    background-color:#B3C5CF;
+    color: #163AE1;
+    width:50%;
+    position: relative;
+    left:25%;
+}
+
+/* Image of users choice */
+.choiceImage{
+    width:100px;
+    height:100px;
+    margin:20px;
+}
+
+.choiceImage:hover{
+    cursor: pointer;
+}
+
+/* Container for scoreboard */
+.scoreboard{
+    border:solid 1.5px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+    width:49%
+}
+.scoreboard p{
+    text-align: left;
+    padding:0px 10px;
+}

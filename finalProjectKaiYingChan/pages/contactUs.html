@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <title>Taiwan Travel Guide</title>
+        
+        <link href= "../css/final.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class = "taiwanFoodsHeader">
+            <nav>
+                <div>
+                <p><a href="../index.html">Taiwan Travel Guide</a></p>
+                <ul>
+                    <li><a class="headerButtons" href="taiwanFoods.html">Taiwan Foods</a></li>
+                    <li><a class="headerButtons" href="#">Tourist Sites</a>
+                        <ul>
+                            <li><a href="taipei.html">Taipei</a></li>
+                            <li><a href="tainan.html">Tainan</a></li>
+                            <li><a href="taichung.html">TaiChung</a></li>
+                            <li><a href="kaohsiung.html">Kaohsiung</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="headerButtons" href="#">Gallery</a>
+                        <ul>
+                            <li><a href="galleryFood.html">Foods</a></li>
+                            <li><a href="galleryTouristSite.html">Tourist Sites</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="headerButtons" id="navCurrentPage" href="contactUs.html">Contact Us</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+        <main class = "indexMain">
+            
+        <div class ="contactForm">
+                <h2>Tourist sites or Foods you recommend</h2>
+                <form action = "../scripts/contact.php" method="post">
+                <h3>Self Introduction</h3>
+                <div class ="aboutYourselfContainer">
+                <label for = "name">Name:</label>
+                    <input type="text" name="name" id="name" 
+                       size="20" maxlength="50" required
+                       placeholder="Name required*">
+                <label for = "email">Email:</label>
+                    <input type="email" name="email" id="email" 
+                       size="20" maxlength="50" required
+                       placeholder="email required*">
+                <br>
+                <label for = "aboutYourself">Tell us about yourself</label><br>
+                    <textarea name = "aboutYourself" id = "aboutYourself" cols = "40" rows = "5"></textarea>
+                <br>
+                </div>
+                <h3>Brief Description for this Place</h3>
+                <div class="locationContainer">
+                    
+                    <label for = "categories" class>Category:</label>
+                    <select name = "category" id="category">
+                        <option>Choose one</option>
+                        <option value="TPE">Taiwan Delicacy</option>
+                        <option value="TNN">Tourist Site</option>
+                    </select>
+                    <label for = "city">City:</label>
+                    <select name = "city" id="city">
+                        <option>Choose one</option>
+                        <option value="TPE">Taipei</option>
+                        <option value="TNN">Tainan</option>
+                        <option value="KHH">Kaohsiung</option>
+                        <option value="TXG">Taichung</option>
+                    </select>
+                    <br>
+                    <label for = "placeName">Name:</label>
+                    <input type="text" name="placeName" id="placeName" 
+                       size="20" maxlength="50" required
+                       placeholder="For example: Beef soup">
+                     
+                    <label for = "address">Location Address:</label>
+                    <input type="text" name="address" id="address" 
+                       size="20" maxlength="50" required
+                       placeholder="Address required*">
+                    <br>
+                    <label for = "comments">Why would you recommend this place?</label><br>
+                        <textarea name = "comments" id = "comments" cols = "40" rows = "10"></textarea>
+                </div>    
+                    
+                    <br>
+                    <input type = "submit" name = "submit" value = "Send Form" class = "button">
+                    <input type = "reset" name = "reset" value = "Clear Form" class = "button">       
+                </form>
+            </div>      
+        </main>
+        <footer>
+            <h2>Follow Me & Explore Taiwan</h2>
+            <div>
+                <a class="socialButton" href="https://www.facebook.com/profile.php?id=100000497922490"><i class="fab fa-facebook-f"></i></a>
+                <a class="socialButton" href="https://www.instagram.com/lightjan2005/"><i class="fab fa-instagram"></i></a>
+                <a class="socialButton" href="https://www.airbnb.com.tw/s/Taiwan-region/homes?refinement_paths%5B%5D=%2Fhomes&click_referer=t%3ASEE_ALL%7Csid%3A5a96b017-47f5-4442-8072-27dc3d1c00ce%7Cst%3ALANDING_PAGE_MARQUEE&search_type=autocomplete_click&screen_size=large&adults=1&price_max=1000&query=Taiwan%20region&place_id=ChIJL1cHXAbzbjQRaVScvwTwEec"><i class="fab fa-airbnb"></i></a>
+                <a class="socialButton" href="https://www.youtube.com/results?search_query=Travel+Taiwan"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy;2019 Chan Kai Ying</p>
+        </footer>
+    </body>
+</html>
