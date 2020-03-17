@@ -23,6 +23,8 @@ $( "#next-btn" ).click(function() {
 function startGame() {
     // when click 'start button' hide start button
     $('#start-btn').addClass('hide')
+  
+  // randomize the questions
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   // when click 'start button' show questions
@@ -30,6 +32,7 @@ function startGame() {
   setNextQuestion()
 }
 
+// randomize the questions
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
@@ -39,7 +42,7 @@ function showQuestion(question) {
   $('#question').html(question.question) 
   question.answers.forEach(answer => {
     const button = document.createElement('button')
-    $('#button').html(answer.text)
+    button.innerText = answer.text
     button.classList.add('btn')
     if (answer.correct) {
       button.dataset.correct = answer.correct
