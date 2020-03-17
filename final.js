@@ -79,6 +79,11 @@ $(function() {
         // Change src attribute of image
         $(this).attr("src", "images/aboutMePic2.jpg");
     });  
+
+    $('#experienceSection article').resizable({
+      
+      grid:[10,10]
+    });
     
     
 

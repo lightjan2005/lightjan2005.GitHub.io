@@ -23,8 +23,6 @@ $( "#next-btn" ).click(function() {
 function startGame() {
     // when click 'start button' hide start button
     $('#start-btn').addClass('hide')
-  
-  // randomize the questions
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   // when click 'start button' show questions
@@ -32,7 +30,6 @@ function startGame() {
   setNextQuestion()
 }
 
-// randomize the questions
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
@@ -54,7 +51,7 @@ function showQuestion(question) {
 
 function resetState() {
   clearStatusClass(document.body)
-  nextButton.classList.add('hide')
+  $('#next-btn').addClass('hide')
   while (answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
   }
@@ -100,12 +97,10 @@ const questions = [
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'What does COVID-19 stand for?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'China output virus in December, 2019', correct: true },
+      { text: 'Coronavirus disease 2019', correct: true },
     ]
   },
   {
@@ -123,5 +118,15 @@ const questions = [
       { text: '6', correct: false },
       { text: '8', correct: true }
     ]
+  },
+  {
+    question: 'Choose an action that can keep you from diseases',
+    answers: [
+      { text: 'Wear a mask', correct: true },
+      { text: 'Go to a party', correct: false },
+      { text: 'Wash hands frequently', correct: true },
+      { text: 'Stay at home', correct: true }
+    ]
   }
 ]
+
