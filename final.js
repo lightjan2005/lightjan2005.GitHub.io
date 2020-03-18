@@ -29,6 +29,18 @@ $(function() {
 
     }, 'img');
 
+    // Javascript for Animation
+    $('.headerButtons').click(function(){
+
+      var getElement = $(this).attr("href");
+    if ($(getElement).length){
+      var getOffset = $(getElement).offset().top;
+      $('html,body').animate({
+        scrollTop:getOffset -50
+      },1000);
+    }
+      return false;
+    });
 
     // Input Validation
   
@@ -80,13 +92,7 @@ $(function() {
         $(this).attr("src", "images/aboutMePic2.jpg");
     });  
 
-    $('#experienceSection article').resizable({
-      
-      grid:[10,10]
-    });
     
-    
-
   // end document ready function
   });
   
@@ -177,3 +183,11 @@ $(function() {
      Test the following invalid entries for name:
      - '', '  ', 'a ', '12', '#$', 'a1'
   */
+
+
+
+
+
+
+
+
