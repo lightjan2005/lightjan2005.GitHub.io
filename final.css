@@ -309,7 +309,7 @@ input, textarea{
 
 footer{
     background-color:#18181a;
-    height:150px;
+    height:200px;
     padding:20px;
     position: relative;
     top:60px;
@@ -369,4 +369,21 @@ footer p{
     color:#FFF;
     text-align: center;
     font-family: cursive;
+}
+
+#thisPageCode a{
+    background-color: #FFF;
+    display:inline-block;
+    margin:20px;
+    width:120px;
+    height:20px;
+    padding:10px;
+    text-decoration: none;
+    border-radius: 20px;
+    float: right;
+    color: #0D99E5;
+}
+
+#thisPageCode a:hover{
+    background-color: rgb(168, 231, 184);
 }
